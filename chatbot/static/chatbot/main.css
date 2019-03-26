@@ -1,0 +1,108 @@
+body {
+  background-image: url('/static/chatbot/images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+.chatbox
+{
+    width: 100%;
+    min-width: 390px;
+    height: 70vh;
+    background: #ececec;
+    margin: 20px auto;
+}
+
+.chatlogs
+{
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #ececec;
+}
+
+.chatlogs::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background: rgba(150, 150, 150, 1);
+}
+
+.chat
+{
+	padding-bottom: 15px;
+}
+
+.chat .user-photo
+{
+    width: 60px;
+    height: 60px;
+    background: #ececec;
+    overflow: hidden;
+}
+
+.chat .user-photo img
+{
+    width: 100%;
+}
+
+.chat .chat-message
+{
+    width: fit-content;
+    padding: 10px 20px 10px 20px;	/* top right bottom left */
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+.friend-chat-message
+{
+    background: white;
+    margin: 5px; 
+    color: gray;
+}
+
+.self-chat-message
+{
+    background: blue;
+    margin: 5px;
+    color: white;
+}
+
+
+/* sending message */
+.chat-form
+{
+    margin-top: 20px;
+}
+
+.chat-form textarea
+{
+    background: #fbfbfb;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #eee;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.chat-form textarea:focus
+{
+    background: #fff;
+}
+
+.chat-form button
+{
+	background-color: blue;
+    color: white;
+}
