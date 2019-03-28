@@ -25,7 +25,9 @@ SECRET_KEY = '#)w4)i%l3@$gujtx*2!qdm$zxx-qby=et8##3hkq!q#n+lwtoc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'shoppingsitechatbot.herokuapp.com',
+]
 
 
 # Application definition
