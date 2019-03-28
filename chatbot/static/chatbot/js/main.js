@@ -20,7 +20,7 @@ function displayModalView(str)
     	bodyContent += '<img class="article-img" src="../../../../media/' + response[product].image + '">';
     	bodyContent += '<div class="media-body">';
     	bodyContent += '<h2 class="article-title">' + response[product].title + '</h2>';
-    	bodyContent += '<small class="text-muted">' + response[product].sku.price.$numberDecimal + '</small>';
+    	bodyContent += '<small class="text-muted">₹' + response[product].sku.price.$numberDecimal + '</small>';
     	bodyContent += '</div>';
     	bodyContent += '<a class="btn btn-info btn-sm mt-1 mb-1" href="http://localhost:8000/add/'+ response[product] +'">Add to Cart</a>';
     	bodyContent += '</article>';
