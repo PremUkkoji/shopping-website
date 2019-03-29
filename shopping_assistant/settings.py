@@ -93,10 +93,10 @@ DATABASES = {
         'ENGINE': 'djongo',
         'ENFORCE_SCHEMA': True,
         'NAME': 'shopping_database',
-        'HOST': 'ds141328.mlab.com',
-        'PORT': 41328,
-        'USER': 'premukkoji',
-        'PASSWORD': 'MacB00k',
+        'HOST': '',#database hostname
+        'PORT': ,#database port number
+        'USER': ''#database username,
+        'PASSWORD': '',#database users password
         'AUTH_SOURCE': 'shopping_database',
         'AUTH_MECHANISM': 'SCRAM-SHA-1',
         'SSL': False,
