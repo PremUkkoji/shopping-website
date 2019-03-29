@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#)w4)i%l3@$gujtx*2!qdm$zxx-qby=et8##3hkq!q#n+lwtoc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'shoppingsitechatbot.herokuapp.com',
