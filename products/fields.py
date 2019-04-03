@@ -1,3 +1,5 @@
+# this file is made to handle Decimal values in MongoDB
+
 from bson.decimal128 import Decimal128
 from djongo.models import DecimalField
    

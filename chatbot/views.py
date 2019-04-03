@@ -6,6 +6,8 @@ from pprint import pprint
 def chatbot(request):
 	return render(request, 'chatbot/chatbot.html')
 
+
+# the following definition accepts queries from the user
 def chatbotResponse(request):
 	query = request.GET['query']
 	data = {'reply': 'chatbot could\'nt respond due to network issue!! Try Again'}

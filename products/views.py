@@ -1,3 +1,6 @@
+# this file contains the views in the product app
+# And it even contains API's to request product details from MongoDB
+
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
@@ -73,6 +76,7 @@ def removeFromCart(request, product):
 from bson.json_util import dumps
 import json
 
+# the following API requests products of requested category from DB
 @api_view(['GET'])
 def categoryProduct(request, category, format=None):
 	if request.method == 'GET':
@@ -82,6 +86,7 @@ def categoryProduct(request, category, format=None):
 		else:
 			return Response(json.loads('{ "query" : "empty" }'))
 
+# following API requests rating of a particular product
 @api_view(['GET'])
 def ratingOfProduct(request, product, format=None):
 	if request.method == 'GET':
@@ -91,6 +96,7 @@ def ratingOfProduct(request, product, format=None):
 		else:
 			return Response(json.loads('{ "query" : "empty" }'))
 
+# the followig API requests data for comparing two products
 @api_view(['GET'])
 def compareProducts(request, prod1, prod2, format=None):
 	if request.method == 'GET':
@@ -100,6 +106,7 @@ def compareProducts(request, prod1, prod2, format=None):
 		else:
 			return Response(json.loads('{ "query" : "empty" }'))
 
+# following API requests discount of a particular product
 @api_view(['GET'])
 def discountOfProduct(request, product, format=None):
 	if request.method == 'GET':
@@ -139,6 +146,7 @@ def discountOfProduct(request, product, format=None):
 # 		else:
 # 			return Response(json.loads('{ "query" : "empty" }'))
 
+# the following API requests for one product details
 @api_view(['GET'])
 def productDetails(request, product, format=None):
 	if request.method == 'GET':

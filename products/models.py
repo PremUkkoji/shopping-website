@@ -19,6 +19,7 @@ class StockKeepingUnit(models.Model):
         abstract = True
 
 
+# the following class is Model(Structure of Product in DB)
 class Product(models.Model):
     _id = models.ObjectIdField()
     title = models.CharField(max_length=100)
